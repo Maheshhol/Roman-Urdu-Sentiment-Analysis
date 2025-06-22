@@ -34,16 +34,16 @@ option = st.sidebar.selectbox("Navigate", ["Home", "Dataset", "Evaluation", "Pre
 
 # Sidebar - User input
 if option == "Predict":
-    st.sidebar.subheader("Enter a Roman Urdu sentence")
+    st.sidebar.subheader("Enter a Roman Hindi sentence")
     user_input = st.sidebar.text_area("Your Text:")
 else:
     user_input = None
 
 # Page Content
-st.title("📊 Roman Urdu Sentiment Analyzer")
+st.title("📊 Roman Hindi Sentiment Analyzer")
 
 if option == "Home":
-    st.markdown("### 🤖 A simple machine learning app to predict Roman Urdu sentence sentiment.")
+    st.markdown("### 🤖 A simple machine learning app to predict Roman Hindi sentence sentiment.")
     st.markdown("Built using **Naive Bayes**, **TF-IDF**, and **Streamlit**.")
     st.markdown("Navigate to different sections using the left sidebar.")
 
